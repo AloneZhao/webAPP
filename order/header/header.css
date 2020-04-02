@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  height: 1.706667rem;
+  background: #fff;
+  border-bottom: .026667rem solid #d2d2d2;
+  font-size: .453333rem;
+  line-height: 1.706667rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
