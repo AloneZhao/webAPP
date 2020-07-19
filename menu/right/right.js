@@ -65,12 +65,10 @@
   }
 
   /**
-   * 渲染标题
+   * 渲染右侧title
    * @param [*] array 
    */
   function initRightTitle(str) {
-
-
     $('.right-title').text(str);
   }
 
@@ -103,12 +101,12 @@
 
       var itemData = $item.data('itemData');
 
-      // window.ShopBar.minusItem(itemData);
+      window.ShopBar.minusItem(itemData);
 
       $count.text(val);
 
       itemData.chooseCount = itemData.chooseCount - 1;
-      window.ShopBar.renderItems();
+      // window.ShopBar.renderItems();
     });
   }
 
@@ -117,7 +115,6 @@
    * @description 列表单个组件
    */
   var refresh = function (data) {
-
     initRightItem(data.spus || []);
     initRightTitle(data.name);
     addClick();

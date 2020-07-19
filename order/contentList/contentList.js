@@ -32,7 +32,7 @@
     isLoading = true;
     $.get('../json/orders.json', function (data) {
       setTimeout(function () {
-        console.log(data);
+        console.log(data.data.digestlist);
         var list = data.data.digestlist || [];
         initContentList(list);
         isLoading = false;

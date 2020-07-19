@@ -1,0 +1,46 @@
+.restanurant ul {
+  border-bottom: 0.2666666667rem solid #eee;
+}
+
+.restanurant ul:last-child {
+  border: none;
+}
+
+.restanurant ul li {
+  height: 1.2rem;
+  font-size: 0.3733333333rem;
+  line-height: 1.2rem;
+  position: relative;
+  padding-left: 0.6933333333rem;
+  margin-left: 0.4rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.restanurant ul li::before {
+  content: '';
+  display: block;
+  width: 0.4266666667rem;
+  height: 0.4266666667rem;
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-size: cover;
+}
+
+.restanurant .address:before {
+  background-image: url("./img/address.png");
+}
+
+.restanurant .pay:before {
+  background-image: url("./img/pay.png");
+}
+
+.restanurant .tel:before {
+  background-image: url("./img/email.png");
+}
+
+.restanurant .time:before {
+  background-image: url("./img/question.png");
+}

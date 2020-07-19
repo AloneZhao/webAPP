@@ -135,3 +135,7 @@
 .r-item-content .item-pre-price {
   float: left;
 }
+
+a {
+  text-decoration: none;
+}

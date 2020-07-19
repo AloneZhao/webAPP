@@ -1,6 +1,6 @@
 (function () {
   // 商家详情模版
-  var itemTmpl = '<div class="r-item-content scale-1px">' +
+  var itemTmpl = '<a href="../menu/menu.html"><div class="r-item-content scale-1px">' +
     '<img class="item-img" src=$pic_url />' +
     '$brand' +
     '<div class="item-info-content">' +
@@ -19,7 +19,7 @@
     '$others' +
     '</div>' +
     '</div>' +
-    '</div>';
+    '</div></a>';
 
 
   /**
@@ -53,6 +53,7 @@
     page++;
     isLoading = true;
     $.get('../json/homelist.json', function (data) {
+      console.log(data.data.poilist);
       var list = data.data.poilist || [];
       initContentList(list);
       isLoading = false;
